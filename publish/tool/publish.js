@@ -13,7 +13,7 @@ let requst  = http.request({
   console.log(response)
 })
 
-let file = fs.createReadStream('./package.json')
+let file = fs.createReadStream('./index.html')
 
 file.on('data', chunk => {
   requst.write(chunk)
